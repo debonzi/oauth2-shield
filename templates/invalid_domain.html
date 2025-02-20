@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gray-900 text-white">
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-96 text-center">
+        <h1 class="text-2xl font-bold text-white mb-4">Sorry, but you email domain ({{domain}}) is not allowed</h1>
+        <p class="text-gray-300 mb-6">Please Login to Continue</p>
+        <a href="{{authorization_url}}"
+            class="flex items-center justify-center gap-2 w-full py-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600 transition duration-300">
+            <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google Logo" class="w-6 h-6">
+            Login with Google
+        </a>
+    </div>
+</body>
+
+</html>
